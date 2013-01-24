@@ -1,0 +1,63 @@
+1. O(n) implies that the algorithm runs in linear time proportional to 
+   the given input data.
+   O(n^2) implies that the algorithm runs in quadratic time proportional 
+   to the given input data.
+   
+   This implis that when the data is huge, the alogorithm with O(n^2) 
+   runs forever to complete.
+   
+2. Quicksort is a divide and conquer algorithm to sort data, based on 
+   partioning the data using a pivot element.
+   
+   The algorithm runs as follows:
+   1. Pick an element as pivot.
+   2. Partition the data based on the pivot such that elements less than 
+      pivot are to the left of the pivot and elements greater than pivot 
+      are to the roght of the pivot.
+   3. Recursively sort the two smaller paritions.
+   
+   Complexity:
+   Average case - O(nlogn)
+   Worst Case - O(n^2)
+   
+   The complexity depends on the choice of pivot.
+
+3. In C, a pointer stores a reference to another value.
+   For example, if we have the following code:
+     int number = 10;
+     
+     This can be interpreted as follows:
+        'number' is a box with its value inside it.
+        
+        
+    Now, if we have the following code:
+    int *number_pointer = &number;
+    
+    This can be interpreted as follows:
+       'number_pointer' is a box that stores a refernece to the box called 'number'
+       
+4. Stack memory is used to store local variables and function calls where 
+   as heap space is used to store objects (in java) or to dynamically allocate 
+   memory during runtime (Eg: Malloc in C).
+   
+   Variables in Stack are visible to only the owner of the thread. But, 
+   heap memory is visible to all the threads. Each thread has its own 
+   stack space, where as heap space is shared among the threads.
+   
+5. The purpose of garbage collection(GC) is to reclaim heap space from objects 
+   which are eligible for garbage collection (if it is not reachable by any 
+   live threads or any static references, or if the references are explicitly
+    set to 'null').
+   
+   There are a couple of garbage collection mechanisms:
+   1. Mark & Sweep GC:
+        There are two phases in this:
+        a. Mark Phase
+            Depth First Search from every root and marks all live objects
+        b. Sweep Phase
+            Each object not marked has its memory reclaimed.
+      One of the problems with this approach is fragmentation.
+   
+   2. Compacting GC
+      Same as Mark & Sweep, except that objects are moved during sweep
+      phase to reduce fragentation
