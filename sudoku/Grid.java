@@ -1,4 +1,3 @@
-package solve;
 
 import java.util.Stack;
 
