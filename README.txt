@@ -4,6 +4,9 @@ Assumptions:
 Its assumed that input is a 9 X 9 grid and the input is in the format specified in
 sudoku/grid.txt
 
+Output of grid.txt is in solvedGrid.txt
+Output of grid1.txt is in solvedGrid1.txt
+
 1. This algorithm works on a backtracking mechanism. It works as follows:
    1. Try to find a point that is unassigned and put in a value (>0 and <=9) 
       in that point if it is valid, and then fill the rest of the grid.
