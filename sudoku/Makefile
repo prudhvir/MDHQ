@@ -14,7 +14,7 @@ JFLAGS = -g
 # # # typing 'make' will invoke the first target entry in the makefile 
 # # # (the default one in this case)
 # # #
-default: IO.class Grid.class Solver.class
+default: IO.class Grid.class Solver.class Tests.class
 # #
 # # # this target entry builds the IO class
 # # # the IO.class file is dependent on the IO.java file
@@ -28,6 +28,9 @@ Grid.class: Grid.java
 #
 Solver.class: Solver.java
 	$(JCC) $(JFLAGS) Solver.java
+    
+Tests.class: Tests.java
+	$(JCC) $(JFLAGS) Tests.java
 ##
 ## To start over from scratch, type 'make clean'.  
 ## Removes all .class files, so that the next make rebuilds them
