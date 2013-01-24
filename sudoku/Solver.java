@@ -6,6 +6,12 @@ public class Solver {
 	
 	public static void main(String[] args) throws IOException {
 
+		
+		if(args.length < 2) {
+			System.out.println("Two arguments must be provided\nUsage - java Tests input_file output_file");
+			return ;
+		}
+		
 		IO io = new IO();
 		int board[][] = io.readFile(args[0]);
 		Grid grid  = new Grid(board);
