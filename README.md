@@ -14,7 +14,7 @@ $ gcc factorial.c
 $ ./a.out positive_number
 ```
 
-To run the program in ruby, run the following command:
+To run the program in ruby, run the following command: 
 
 ```bash
 $ ruby factorial.rb postive_number
