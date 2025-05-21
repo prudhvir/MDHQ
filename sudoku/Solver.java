@@ -20,7 +20,7 @@ public class Solver {
 		grid.print();
 		
 		//solve Sudoku
-		grid.SolveSudoku();
+		grid.solveSudoku();
 		
 		System.out.println("After Solving\n");
 		grid.print();
